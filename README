@@ -1,1 +1,9 @@
-Uses web.py, quik, bootstrap, jquery, and chartjs to host a dynamic plotter web application based on user input
+[Description]
+  Uses web.py, quik, bootstrap, jquery, and chartjs to host a dynamic plotter web application based on user input
+
+[Usage]
+  - Install pyenv
+  - Use pyenv to install python version used in .python-version
+  - Run ./install_dependencies.sh
+  - Start server ./main.py
+  - Visit server in browser http://localhost:8080
