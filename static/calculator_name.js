@@ -1,11 +1,11 @@
 $(function(){
-	var ctx = document.getElementById("myChart").getContext('2d');
-	window.chart = new Chart(ctx, {
-		type: 'line',
-		data: {
-			labels: ["label1", "label2", "label3"],
-			datasets: [{ 
-					data: [
+  var ctx = document.getElementById("myChart").getContext('2d');
+  window.chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["label1", "label2", "label3"],
+      datasets: [{ 
+          data: [
           {
             x: 0,
             y: 0
@@ -19,27 +19,27 @@ $(function(){
             y: 0.5
           }
           ],
-					label: "User Supplied Data",
-					borderColor: "#3e95cd",
-					fill: false
-				}
-			]
-		},
-		options: {
-			title: {
-				display: true,
-				text: 'Line Graph'
-			},
-			scales: {
-				 yAxes: [{
-						ticks: {
-							 min: 0,
-							 max: 10
-						}
-				 }]
-			}
-		}
-	});
+          label: "User Supplied Data",
+          borderColor: "#3e95cd",
+          fill: false
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Line Graph'
+      },
+      scales: {
+         yAxes: [{
+            ticks: {
+               min: 0,
+               max: 10
+            }
+         }]
+      }
+    }
+  });
   function update_chart(){
     var dataset = window.chart.data.datasets[0];
     while(dataset.data.length > 0){

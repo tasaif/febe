@@ -6,4 +6,4 @@
   - Use pyenv to install python version used in .python-version
   - Run ./install_dependencies.sh
   - Start server ./main.py
-  - Visit server in browser http://localhost:8080
+  - Visit server in browser http://localhost:8080/template/calculator_name.html
