@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="/static/calculator_name.js"></script>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <center>
+            <h2>Calculator / Plotter</h2>
+          </center>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-6'>
+          <div class='datapoint'>
+            <label>x1</label><input class='x' type='text' name='x1' value=0 /><br/>
+            <label>y1</label><input class='y' type='text' name='y1' value=0 /><br/>
+          </div>
+          <div class='datapoint'>
+            <label>x2</label><input class='x' type='text' name='x2' value=1 /><br/>
+            <label>y2</label><input class='y' type='text' name='y2' value=1 /><br/>
+          </div>
+          <div class='datapoint'>
+            <label>x3</label><input class='x' type='text' name='x3' value=0.5 /><br/>
+            <label>y3</label><input class='y' type='text' name='y3' value=0.5 /><br/>
+          </div>
+          <div class='note'>
+            <i>Requirement: x1 &lt; x2 &lt; x3</i>
+          </div>
+        </div>
+        <div class='col-md-6'>
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
